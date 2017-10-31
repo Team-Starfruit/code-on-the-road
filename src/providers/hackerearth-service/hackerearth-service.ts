@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
 
 @Injectable()
 export class HackerEarthServiceProvider {
@@ -11,10 +10,10 @@ export class HackerEarthServiceProvider {
   constructor(public http: Http) { }
 
   /**
-   * Runs a given code snippet
-   * @method runSnippet
+   * Compiles a given code snippet
+   * @method compileSnippet
    * @param language programming language
-   * @param snippet actual code to run
+   * @param snippet actual code to compile
    * @return promise with response
    */
   compileSnippet(language, snippet) {
