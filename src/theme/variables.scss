@@ -22,8 +22,11 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
+$menu-ios-background: #000428;
+$menu-md-background: #000428;
+$menu-wp-background: #000428;
 
-
+$toolbar-background: transparent;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -45,15 +48,17 @@ $colors: (
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
+$toolbar-ios-title-font-weight: lighter;
+$button-ios-background-color: transparent;
 
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-
+$toolbar-md-title-font-weight: lighter;
+$button-md-background-color: transparent;
+$button-md-box-shadow: none;
 
 
 // App Windows Variables
@@ -86,3 +91,13 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+@font-face {
+	font-family: 'Roboto';
+	src: url("https://fonts.googleapis.com/css?family=Roboto");
+}
+
+body, span, button, h1, h2, h3, h4, h5, h6, p, ion-item, ion-title {
+font-family: 'Roboto' !important;
+font-weight: light;
+}
