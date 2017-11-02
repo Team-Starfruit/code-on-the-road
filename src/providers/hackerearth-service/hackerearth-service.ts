@@ -5,7 +5,7 @@ import { Http } from '@angular/http';
 export class HackerEarthServiceProvider {
 
   private BASE_URL = 'http://api.hackerearth.com/code/';
-  private CLIENT_SECRET = '3a61e309ecccd4f3cdb35d58e29115129d68a907';
+  private CLIENT_SECRET = 'f059ca9df9a4abd9043743620eeecd4a9701eee6';
 
   constructor(public http: Http) { }
 
@@ -26,7 +26,7 @@ export class HackerEarthServiceProvider {
     'memory_limit': 262144,
     }
 
-    return this.http.post(this.BASE_URL + '/compile/', body)
+    return this.http.post(this.BASE_URL + 'compile/', body)
   }
 
   /**
@@ -46,6 +46,6 @@ export class HackerEarthServiceProvider {
     'memory_limit': 262144,
     }
 
-    return this.http.post(this.BASE_URL + '/run/', body)
+    return this.http.post(this.BASE_URL + 'run/', body)
   }
 }
