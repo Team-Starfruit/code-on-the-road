@@ -7,11 +7,10 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="home">
 
-<ion-textarea id="snippet-area" rows="20" [(ngModel)]="snippetArea"> </ion-textarea>
+<ion-textarea id="snippet-area" rows="30" [(ngModel)]="snippetArea"> </ion-textarea>
 
-<button ion-button full on-click="test()"> Compile and Run </button>
-<ion-textarea id="output-area" rows="10"> </ion-textarea>
+<button ion-button color="light" full on-click="test()"> Save Snippet </button>
 
 </ion-content>

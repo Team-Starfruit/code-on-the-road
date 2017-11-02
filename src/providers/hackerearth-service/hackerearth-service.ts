@@ -4,7 +4,7 @@ import { Http } from '@angular/http';
 @Injectable()
 export class HackerEarthServiceProvider {
 
-  private BASE_URL = 'http://api.hackerearth.com/code/';
+  private BASE_URL = 'http://api.hackerearth.com/v3/code/';
   private CLIENT_SECRET = 'f059ca9df9a4abd9043743620eeecd4a9701eee6';
 
   constructor(public http: Http) { }
