@@ -9,5 +9,8 @@
 
 <ion-content padding class="snippets">
 
+	<ion-list *ngIf="snippets" id="snippet-list">
+		<button  ion-item no-lines *ngFor="let snippet of snippets"> {{snippet["name"]}} </button>
+	</ion-list>
 
 </ion-content>

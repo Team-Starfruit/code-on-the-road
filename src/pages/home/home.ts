@@ -1,24 +1,36 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HackerEarthServiceProvider } from '../../providers/hackerearth-service/hackerearth-service'
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [HackerEarthServiceProvider]
 })
 
 
 export class HomePage {
   snippetArea = ""
+  snippetName = "untitled"
+  constructor(public navCtrl: NavController) {}
 
-  constructor(public navCtrl: NavController, 
-  			  public hackerEarthService: HackerEarthServiceProvider) {}
+  public saveSnippet() {
+    console.log(this.snippetArea)
+    console.log(this.snippetName)
 
-  public test() {
-  	this.hackerEarthService.runSnippet('PYTHON', this.snippetArea)
-  	.subscribe(res => {
-  		console.log(res)
-  	});
+    let data = JSON.parse(localStorage.getItem('userData'))
+
+    if (data != undefined) {
+      data['snippets'].push({"name": this.snippetName, "snippet": this.snippetArea})
+      localStorage.setItem('userData', JSON.stringify(data))
+
+    } else {
+      data = {
+        "snippets": [{
+          "name": this.snippetName,
+          "snippet": this.snippetArea
+        }]
+      }
+
+      localStorage.setItem('userData', JSON.stringify(data))
+    }
   }
 }

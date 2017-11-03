@@ -4,4 +4,18 @@ page-snippets {
 		background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
 		background: linear-gradient(to bottom, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	}
+
+	.snippet-item {
+		background: transparent;
+		color: white;
+	}
+
+	#snippet-list {
+	  .item-complex .item-content, .item {
+	  	color: white;
+	    background-color: transparent;
+	    padding-left: 30px;
+	    font-weight: lighter;
+	  }
+	}
 }

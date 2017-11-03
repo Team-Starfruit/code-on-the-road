@@ -12,8 +12,8 @@
 
 <ion-grid id="home-grid"> 
 	<ion-row>
-		<ion-col>
-			<p id="title-text"> untitled.py </p>
+		<ion-col align-center>
+			<ion-input id="title-text" placeholder="untitled" [(ngModel)]="snippetName"> untitled.py </ion-input>
 		</ion-col>
 		<ion-col text-right>
 			<button ion-button icon-only>
@@ -26,7 +26,7 @@
 		<ion-textarea id="snippet-area" rows="25" [(ngModel)]="snippetArea"> </ion-textarea>
 	</ion-row>
 
-	<button id="save-button" ion-button full on-click="test()"> Save Snippet </button>
+	<button id="save-button" ion-button full on-click="saveSnippet()"> Save Snippet </button>
 </ion-grid>
 
 </ion-content>
