@@ -1,4 +1,4 @@
-page-snippets {
+page-snippets-list {
 	.snippets {
 		background: #000428;  /* fallback for old browsers */
 		background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
@@ -14,7 +14,6 @@ page-snippets {
 	  .item-complex .item-content, .item {
 	  	color: white;
 	    background-color: transparent;
-	    padding-left: 30px;
 	    font-weight: lighter;
 	  }
 	}

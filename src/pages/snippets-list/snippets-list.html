@@ -10,7 +10,8 @@
 <ion-content padding class="snippets">
 
 	<ion-list *ngIf="snippets" id="snippet-list">
-		<button  ion-item no-lines *ngFor="let snippet of snippets"> {{snippet["name"]}} </button>
+		<button  ion-item no-lines 
+		*ngFor="let snippet of snippets; let i = index" on-click="navigateToSnippet(snippet, i)"> {{snippet["name"]}} </button>
 	</ion-list>
 
 </ion-content>
