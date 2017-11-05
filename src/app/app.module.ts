@@ -6,8 +6,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { SnippetsPage } from '../pages/snippets/snippets'
-
+import { SnippetsListPage } from '../pages/snippets-list/snippets-list'
+import { SnippetPage } from '../pages/snippet/snippet'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -16,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    SnippetsPage
+    SnippetsListPage,
+    SnippetPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    SnippetsPage
+    SnippetsListPage,
+    SnippetPage
   ],
   providers: [
     StatusBar,
