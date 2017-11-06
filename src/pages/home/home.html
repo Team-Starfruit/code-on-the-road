@@ -3,12 +3,21 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Snip</ion-title>
+    <ion-title></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
+<ion-content text-center class="home">
+	<h1 id="app-title"> Snip. </h1>
 
-<p> this is the home page </p>
+		<button style="font-size: 1.2em; margin: 5%;" ion-button icon-start>
+		  <ion-icon name="school"></ion-icon>
+		  Start Learning
+		</button>
+
+		<button style="font-size: 1.2em;" ion-button icon-start on-click="createSnippet()">
+		  <ion-icon name="add"></ion-icon>
+		  Create Snippet
+		</button>
 
 </ion-content>
