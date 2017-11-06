@@ -28,7 +28,7 @@ export class SnippetPage {
    * @method saveSnippet
    */
   public saveSnippet() {
-    let data = JSON.parse(localStorage.getItem('userData'))
+    let data = JSON.parse(localStorage.getItem('snippetData'))
 
     if (data != undefined) {
       if (this.index != -1) {
@@ -40,7 +40,7 @@ export class SnippetPage {
         data['snippets'].push({"name": this.name, "snippet": this.snippet})
       }
 
-      localStorage.setItem('userData', JSON.stringify(data))
+      localStorage.setItem('snippetData', JSON.stringify(data))
     } else {
       data = {
         "snippets": [{
@@ -49,7 +49,7 @@ export class SnippetPage {
         }]
       }
 
-      localStorage.setItem('userData', JSON.stringify(data))
+      localStorage.setItem('snippetData', JSON.stringify(data))
     }
   }
 }
