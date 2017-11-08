@@ -2,31 +2,26 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SnippetPage } from '../snippet/snippet'
 import { SkillsServiceProvider } from '../../providers/skills-service/skills-service'
+import { ViewChild } from '@angular/core';
+import { Slides } from 'ionic-angular';
+
 import 'rxjs/add/operator/map';
 
 @Component({
-  selector: 'page-snippets-list',
-  templateUrl: 'snippets-list.html',
-  providers: [ SkillsServiceProvider ]
+  selector: 'page-start-learning',
+  templateUrl: 'start-learning.html',
+  providers: [ SkillsServiceProvider, Slides ]
 })
 
 
-export class SnippetsListPage {
-  snippets = null;
-
+export class StartLearningPage {
+  @ViewChild(Slides) slides: Slides;
+  skill = null;
+  duration = null;
+  
   constructor(public navCtrl: NavController, 
               private skillsService: SkillsServiceProvider) {}
 
-   /**
-   * Ionic specific function to work around angular caching
-   * @method ionViewDidEnter
-   */
-  ionViewDidEnter() {
-    let data = JSON.parse(localStorage.getItem('snippetData'))
-
-    if (data != undefined) {
-      this.snippets = data['snippets']
-    }
 
     // let test = this.skillsService.getSkills()
     //   .map(res => res.json())
@@ -34,6 +29,15 @@ export class SnippetsListPage {
     //     console.log(result)
     // });
     
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ServicePage');
+    this.slides.lockSwipes(true);
+  }
+
+  goToSlide(slideNo) {   
+    this.slides.lockSwipes(false);
+    this.slides.slideTo(slideNo, 500);
+    this.slides.lockSwipes(true);
   }
 
    /**

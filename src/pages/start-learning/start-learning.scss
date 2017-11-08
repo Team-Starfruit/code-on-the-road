@@ -1,0 +1,24 @@
+page-start-learning {
+	#title-text {
+		color: white;
+		font-weight: lighter;
+		font-size: 14px
+	}
+
+	.home {
+		#app-title {
+			color: white;
+			text-align: center;
+			font-size: 6em;
+		}
+		background: #000428;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+	#slide-area {
+		color: white;
+		margin-top: -33%;
+	}
+	$button-md-background-color: transparent;
+}
