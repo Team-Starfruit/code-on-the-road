@@ -77,8 +77,31 @@ export class StartLearningPage {
   * @method getResults
   */
   getResults() {
-    console.log(this.taskDurations)
+    let allTasks = [];
 
+    for (let i = 0; i < this.tasks.length; i++ ) {
+      let newTaskOption;
+
+      if (i > 0) {
+        newTaskOption = {
+          "cost": Number(this.taskDurations[i]),
+          "name": this.tasks[i]['description'],
+          "depends": allTasks[i-1]
+        }
+      } else {
+        newTaskOption = {
+          "cost": Number(this.taskDurations[i]),
+          "name": this.tasks[i]['description']
+        }
+      }
+
+      let newTask = new criticalPath.Task(newTaskOption);
+      console.log(allTasks);
+      allTasks.push(newTask);     
+    }
+
+    let result = criticalPath.schedule(allTasks, this.duration)
+    console.log(result)
   }
 
   /**
