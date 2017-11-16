@@ -18,7 +18,12 @@ page-start-learning {
 
 	#slide-area {
 		color: white;
-		margin-top: -33%;
+		font-weight: lighter;
+	}
+
+	.swiper-slide {
+    	overflow-y: scroll;
+    	display: block;
 	}
 	$button-md-background-color: transparent;
 }

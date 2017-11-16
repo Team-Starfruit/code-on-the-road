@@ -47,8 +47,8 @@ $colors: (
 // iOS only Sass variables can go here
 $toolbar-ios-title-font-weight: lighter;
 $button-ios-background-color: transparent;
-
-
+$text-input-ios-highlight-color: white;
+$label-ios-text-color-focused: white;
 
 // App Material Design Variables
 // --------------------------------------------------
@@ -56,7 +56,8 @@ $button-ios-background-color: transparent;
 $toolbar-md-title-font-weight: lighter;
 $button-md-background-color: transparent;
 $button-md-box-shadow: none;
-
+$text-input-md-highlight-color: white;
+$label-md-text-color-focused: white;	
 
 // App Windows Variables
 // --------------------------------------------------

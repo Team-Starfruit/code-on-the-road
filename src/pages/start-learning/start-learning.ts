@@ -4,6 +4,7 @@ import { SnippetPage } from '../snippet/snippet'
 import { SkillsServiceProvider } from '../../providers/skills-service/skills-service'
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
+import * as criticalPath from 'critical-path';
 
 import 'rxjs/add/operator/map';
 
@@ -15,36 +16,111 @@ import 'rxjs/add/operator/map';
 
 
 export class StartLearningPage {
-  @ViewChild(Slides) slides: Slides;
+  @ViewChild(Slides) slides: Slides; 
+  skills = null;
   skill = null;
+
+  tasks = null;
+  taskDurations = [];
+
   duration = null;
-  
+  finalResults = null;
+
   constructor(public navCtrl: NavController, 
-              private skillsService: SkillsServiceProvider) {}
+              private skillsService: SkillsServiceProvider) {
+    let options_1 = {
+      "cost": 100,
+      "name": "test task 1"
+    }
 
+    let task_1 = new criticalPath.Task(options_1)
 
-    // let test = this.skillsService.getSkills()
-    //   .map(res => res.json())
-    //   .subscribe(result => {
-    //     console.log(result)
-    // });
-    
+    let options_2 = {
+      "cost": 150,
+      "depends": task_1,
+      "name": "test task 2"
+    }
+
+    let task_2 = new criticalPath.Task(options_2)
+
+    let result = criticalPath.schedule([task_1, task_2], 2)
+
+    console.log(result)
+
+    this.skillsService.getSkills()
+      .map(res => res.json())
+      .subscribe(result => {
+        this.skills = result['skills']
+      });
+    }
+  
+  // Disable swiping by default.
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ServicePage');
     this.slides.lockSwipes(true);
   }
 
+  /**
+  * Function to move to a given slide as shown on the html page.
+  * disables swiping so values can be entered.
+  *
+  * @method goToSlide
+  */
   goToSlide(slideNo) {   
     this.slides.lockSwipes(false);
     this.slides.slideTo(slideNo, 500);
-    this.slides.lockSwipes(true);
+    this.slides.lockSwipeToNext(true);
   }
 
-   /**
-   * Opens a given snippet to be edited
-   * @method navigateToSnippet
-   */
+  /**
+  * Gets Results
+  *
+  * @method getResults
+  */
+  getResults() {
+    console.log(this.taskDurations)
+
+  }
+
+  /**
+  * Using current information given from past slides, sets
+  * values needed to display tasks and task durations
+  *
+  * @method getTasks
+  */
+  getTasks() {
+    this.goToSlide(2);
+
+    let skillObject = this.getSkillInfo(this.skill)
+    this.tasks = skillObject.tasks
+
+    let iterator = this.tasks.length
+    while(iterator--) this.taskDurations.push(2);
+  }
+
+  /**
+  * Opens a given snippet to be edited
+  *
+  * @method navigateToSnippet
+  */
   navigateToSnippet(snippet, index) {
     this.navCtrl.push(SnippetPage, {'snippet': snippet, 'index': index})
+  }
+
+  /**
+  * Private function that returns a skill object given the 
+  * name of the skill
+  *
+  * @method getSkillInfo
+  */
+  private getSkillInfo(skill) {
+    let skillObject;
+
+    for (let index in this.skills) {
+      if (this.skills[index].skill == skill) {
+        skillObject = this.skills[index]
+      }
+    }
+
+    return skillObject;
   }
 }
