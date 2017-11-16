@@ -1,0 +1,74 @@
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center class="home">
+
+<ion-slides centeredSlides="true" id="slide-area" >
+
+  <ion-slide>
+  	<ion-grid>
+      <ion-row>
+        <h2> For starters, select a skill you would like to master. </h2>
+      </ion-row>
+      <ion-row>
+        <ion-item no-lines style="background: transparent; margin-bottom: 10%;">
+    	      <ion-label style="color: white;">Skill</ion-label>
+    	      <ion-select style="color: white;" [(ngModel)]="skill" okText="Okay" cancelText="Dismiss">
+    	        <ion-option *ngFor="let option of skills" value={{option.skill}} >{{option.skill}}</ion-option>
+    	      </ion-select>
+        </ion-item>
+      </ion-row>
+     	<button *ngIf="skill" ion-button on-click="goToSlide(1)"> NEXT </button>
+   	</ion-grid>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-grid>
+      <ion-row>
+      <h2> Enter the amount of time you would like to master {{skill}}. </h2>
+      </ion-row>
+      <ion-row>
+      <ion-item no-lines style="background: transparent; margin-bottom: 10%;">
+  	      <ion-label style="color: white;">Duration</ion-label>
+  	      <ion-select style="color: white;" [(ngModel)]="duration" interface="action-sheet">
+  	        <ion-option value="10">10 Days</ion-option>
+  	        <ion-option value="20">20 Days</ion-option>
+  	        <ion-option value="30">30 Days</ion-option>
+  	        <ion-option value="40">40 Days</ion-option>
+  	        <ion-option value="50">50 Days</ion-option>
+  	        <ion-option value="60">60 Days</ion-option>
+  	      </ion-select>
+     	</ion-item>
+      </ion-row>
+     	<button *ngIf="duration" ion-button on-click="getTasks()"> NEXT </button>
+    </ion-grid>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-grid>
+      <h2> Enter the estimated time (in hours) it will take you to complete each task for {{skill}}. </h2>
+      <ion-list no-lines>
+        <ion-item *ngFor="let task of tasks; let i=index" style="background: transparent; color: white;">
+          <ion-label color="light" stacked>{{task.task}}. {{task.description}}</ion-label>
+            <ion-input [(ngModel)]=taskDurations[i] style="color: white;" type="number"></ion-input> minutes
+        </ion-item>
+      <button ion-button on-click="getResults()"> Let's Start </button>
+    </ion-list>
+  </ion-grid>
+  </ion-slide>
+
+  <ion-slide>
+    <ion-grid>
+    <h2> These are your results </h2>
+    </ion-grid>
+  </ion-slide>
+
+</ion-slides>
+
+</ion-content>

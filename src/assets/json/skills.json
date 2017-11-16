@@ -1,0 +1,254 @@
+{
+	"skills": [ 
+		{
+			"skill": "Algorithms",
+			"tasks": [
+				{
+					"task": 1,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 2,
+					"description": "Create a snippet that _____"
+				},				
+				{
+					"task": 3,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 4,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 5,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 6,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 7,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 8,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 9,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 10,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 11,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 12,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 13,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 14,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 15,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 16,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 17,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 18,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 19,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 20,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 21,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 22,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 23,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 24,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 25,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 26,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 27,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 28,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 29,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 30,
+					"description": "Create a snippet that _____"
+				}
+			]
+		},
+		{
+			"skill": "Data structures",
+			"tasks": [
+				{
+					"task": 1,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 2,
+					"description": "Create a snippet that _____"
+				},				
+				{
+					"task": 3,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 4,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 5,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 6,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 7,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 8,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 9,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 10,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 11,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 12,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 13,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 14,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 15,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 16,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 17,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 18,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 19,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 20,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 21,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 22,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 23,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 24,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 25,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 26,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 27,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 28,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 29,
+					"description": "Create a snippet that _____"
+				},
+				{
+					"task": 30,
+					"description": "Create a snippet that _____"
+				}
+			]
+		}
+	]
+}

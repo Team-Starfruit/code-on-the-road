@@ -1,18 +1,23 @@
-<ion-header>
+<ion-header no-border>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content text-center class="home">
+	<h1 id="app-title"> Snip. </h1>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+		<button style="font-size: 1.2em; margin: 5%;" ion-button icon-start on-click="startLearning()">
+		  <ion-icon name="school"></ion-icon>
+		  Start Learning
+		</button>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+		<button style="font-size: 1.2em;" ion-button icon-start on-click="createSnippet()">
+		  <ion-icon name="add"></ion-icon>
+		  Create Snippet
+		</button>
+
 </ion-content>

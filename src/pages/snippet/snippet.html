@@ -1,0 +1,32 @@
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Snip</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="snippet">
+
+
+<ion-grid id="snippet-grid"> 
+	<ion-row>
+		<ion-col align-center>
+			<ion-input id="title-text" placeholder="untitled" [(ngModel)]="name"> untitled.py </ion-input>
+		</ion-col>
+		<ion-col text-right>
+			<button ion-button icon-only>
+			  <ion-icon name="camera"></ion-icon>
+			</button>
+		</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-textarea id="snippet-area" rows="25" [(ngModel)]="snippet"> </ion-textarea>
+	</ion-row>
+
+	<button id="save-button" ion-button full on-click="saveSnippet()"> Save Snippet </button>
+</ion-grid>
+
+</ion-content>
