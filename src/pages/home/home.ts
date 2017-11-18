@@ -24,19 +24,6 @@ export class HomePage {
   	console.log(this.userData)
   }
 
-  parseUserData(data) {
-  	var userData = []
-
-  	for (i in data) {
-  		// incomplete object with current date
-  		// iterate through tasks and if there are incomplete ones
-  		// then just append it
-  		// then append to userdata
-  		
-  		var incompleteObject
-  	}
-  }
-
   createSnippet() {
   	this.navCtrl.push(SnippetPage)
   }
