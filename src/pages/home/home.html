@@ -10,7 +10,18 @@
 <ion-content text-center class="home">
 	<h1 id="app-title"> Snip. </h1>
 
-		<button style="font-size: 1.2em; margin: 5%;" ion-button icon-start on-click="startLearning()">
+      <ion-list *ngIf="userData" >
+      	<h3 style="color: white; margin-top: -30%;"> Tasks to complete </h3>
+        <ion-item *ngFor="let data of userData; let i=index" style="background: transparent; color: white;">
+          <p style="color: white"> Due: {{data.date}} </p>
+
+          <ion-row>
+          	<button ion-button icon-start> Complete Task </button>
+          </ion-row>
+        </ion-item>
+    </ion-list>
+
+		<button *ngIf="!userData" style="font-size: 1.2em; margin: 5%;" ion-button icon-start on-click="startLearning()">
 		  <ion-icon name="school"></ion-icon>
 		  Start Learning
 		</button>

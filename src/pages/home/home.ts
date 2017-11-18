@@ -10,8 +10,32 @@ import { StartLearningPage } from '../start-learning/start-learning'
 
 
 export class HomePage {
+  userData = null;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {
+  }
+
+  ionViewDidEnter() {
+  	let data = JSON.parse(localStorage.getItem('userData'))  
+
+  	if (data != null) {
+  		this.userData = data;
+  	}
+  	console.log(this.userData)
+  }
+
+  parseUserData(data) {
+  	var userData = []
+
+  	for (i in data) {
+  		// incomplete object with current date
+  		// iterate through tasks and if there are incomplete ones
+  		// then just append it
+  		// then append to userdata
+  		
+  		var incompleteObject
+  	}
+  }
 
   createSnippet() {
   	this.navCtrl.push(SnippetPage)
