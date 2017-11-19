@@ -14,12 +14,12 @@
         <h3 style="color: white; margin-top: -30%;"> Tasks to complete </h3>
         <ion-item *ngFor="let data of userData; let i=index" style="background: transparent; color: white;">
             <h3 style="color: white"> Due: {{data.date}} </h3>
-            <ion-row *ngFor="let task of data.tasks">
+            <ion-row *ngFor="let task of data.tasks; let j=index">
                 <ion-item no-lines style="background: transparent; color: white; font-weight: lighter;"> 
                 	<p style="color: white;"> Task: {{task.task.name}} </p>
                 	<p style="color: white;">Completed: {{task.completed}} </p>
 
-                    <button ion-button icon-start on-click="createSnippet()">
+                    <button *ngIf="!task.completed" ion-button icon-start on-click="createSnippet(i, j)">
                         <ion-icon name="add"></ion-icon>
                         Complete Task
                     </button>

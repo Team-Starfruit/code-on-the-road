@@ -14,8 +14,7 @@ import 'rxjs/add/operator/map';
 export class SnippetsListPage {
   snippets = null;
 
-  constructor(public navCtrl: NavController, 
-              private skillsService: SkillsServiceProvider) {}
+  constructor(public navCtrl: NavController) {}
 
    /**
    * Ionic specific function to work around angular caching
@@ -27,13 +26,6 @@ export class SnippetsListPage {
     if (data != undefined) {
       this.snippets = data['snippets']
     }
-
-    // let test = this.skillsService.getSkills()
-    //   .map(res => res.json())
-    //   .subscribe(result => {
-    //     console.log(result)
-    // });
-    
   }
 
    /**

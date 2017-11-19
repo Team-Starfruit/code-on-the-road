@@ -13,12 +13,12 @@
 <ion-grid id="snippet-grid"> 
 	<ion-row>
 		<ion-col align-center>
+			<p *ngIf="taskName" style="color: white;"> Task: {{taskName}} </p>
+	    </ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col align-center>
 			<ion-input id="title-text" placeholder="untitled" [(ngModel)]="name"> untitled.py </ion-input>
-		</ion-col>
-		<ion-col text-right>
-			<button ion-button icon-only>
-			  <ion-icon name="camera"></ion-icon>
-			</button>
 		</ion-col>
 	</ion-row>
 

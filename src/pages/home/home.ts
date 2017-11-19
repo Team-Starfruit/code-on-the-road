@@ -21,11 +21,14 @@ export class HomePage {
   	if (data != null) {
   		this.userData = data;
   	}
-  	console.log(this.userData)
   }
 
-  createSnippet() {
-  	this.navCtrl.push(SnippetPage)
+  createSnippet(dayIndex?, taskIndex?) {
+    if(dayIndex != undefined   && taskIndex != undefined  ){
+      this.navCtrl.push(SnippetPage, {'userDataIndex': [dayIndex, taskIndex]});
+    } else {
+      this.navCtrl.push(SnippetPage) 
+    }
   }
 
   startLearning() {
