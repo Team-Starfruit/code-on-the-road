@@ -1,5 +1,5 @@
 # Snip
 
 ## How to Run it
-`npm install`
-`ionic serve`
+1. `npm install`
+2. `ionic serve`
