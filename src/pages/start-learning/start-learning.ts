@@ -82,26 +82,52 @@ export class StartLearningPage {
     for (let i = 0; i < this.tasks.length; i++ ) {
       let newTaskOption;
 
-      if (i > 0) {
-        newTaskOption = {
+      newTaskOption = {
           "cost": Number(this.taskDurations[i]),
           "name": this.tasks[i]['description'],
-          "depends": allTasks[i-1]
-        }
-      } else {
-        newTaskOption = {
-          "cost": Number(this.taskDurations[i]),
-          "name": this.tasks[i]['description']
-        }
       }
 
       let newTask = new criticalPath.Task(newTaskOption);
-      console.log(allTasks);
       allTasks.push(newTask);     
     }
 
     let result = criticalPath.schedule(allTasks, this.duration)
-    console.log(result)
+    this.createUserData(result);
+    // go to next slide that displays everything
+  }
+
+  private addDays(date, days) {
+    var result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+  }
+
+  private createUserData(tasks) {
+    let userData = [];
+    let daysToAdd = 0;
+
+    for (let i in tasks) { 
+      let date = new Date()
+      date = this.addDays(date, daysToAdd);
+
+      let data = {
+          "date": date,
+          "snippet": null,
+          "tasks": [] 
+      }
+
+      for (let j in tasks[i]) {
+        let task = {
+          "task": tasks[i][j].task,
+          "completed": false
+        }
+        data['tasks'].push(task)
+      }
+      daysToAdd++;
+      userData.push(data)
+    }
+
+    localStorage.setItem('userData', JSON.stringify(userData))    
   }
 
   /**

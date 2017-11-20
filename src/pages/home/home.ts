@@ -10,11 +10,25 @@ import { StartLearningPage } from '../start-learning/start-learning'
 
 
 export class HomePage {
+  userData = null;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {
+  }
 
-  createSnippet() {
-  	this.navCtrl.push(SnippetPage)
+  ionViewDidEnter() {
+  	let data = JSON.parse(localStorage.getItem('userData'))  
+
+  	if (data != null) {
+  		this.userData = data;
+  	}
+  }
+
+  createSnippet(dayIndex?, taskIndex?) {
+    if(dayIndex != undefined   && taskIndex != undefined  ){
+      this.navCtrl.push(SnippetPage, {'userDataIndex': [dayIndex, taskIndex]});
+    } else {
+      this.navCtrl.push(SnippetPage) 
+    }
   }
 
   startLearning() {

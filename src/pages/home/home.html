@@ -1,23 +1,43 @@
 <ion-header no-border>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title></ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title></ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content text-center class="home">
-	<h1 id="app-title"> Snip. </h1>
+    <h1 id="app-title"> Snip. </h1>
 
-		<button style="font-size: 1.2em; margin: 5%;" ion-button icon-start on-click="startLearning()">
-		  <ion-icon name="school"></ion-icon>
-		  Start Learning
-		</button>
+    <ion-list *ngIf="userData">
+        <h3 style="color: white; margin-top: -30%;"> Tasks to complete </h3>
+        <ion-item *ngFor="let data of userData; let i=index" style="background: transparent; color: white;">
+            <h3 style="color: white"> Due: {{data.date}} </h3>
+            <ion-row *ngFor="let task of data.tasks; let j=index">
+                <ion-item no-lines style="background: transparent; color: white; font-weight: lighter;"> 
+                	<p style="color: white;"> Task: {{task.task.name}} </p>
+                	<p style="color: white;">Completed: {{task.completed}} </p>
 
-		<button style="font-size: 1.2em;" ion-button icon-start on-click="createSnippet()">
-		  <ion-icon name="add"></ion-icon>
-		  Create Snippet
-		</button>
+                    <button *ngIf="!task.completed" ion-button icon-start on-click="createSnippet(i, j)">
+                        <ion-icon name="add"></ion-icon>
+                        Complete Task
+                    </button>
+                </ion-item>
+
+            </ion-row>
+
+        </ion-item>
+    </ion-list>
+
+    <button *ngIf="!userData" style="font-size: 1.2em; margin: 5%;" ion-button icon-start on-click="startLearning()">
+        <ion-icon name="school"></ion-icon>
+        Start Learning
+    </button>
+
+    <button style="font-size: 1.2em; margin-bottom: 10%" ion-button icon-start on-click="createSnippet()">
+        <ion-icon name="add"></ion-icon>
+        Create Blank Snippet
+    </button>
 
 </ion-content>
