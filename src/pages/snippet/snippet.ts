@@ -13,7 +13,7 @@ export class SnippetPage {
   index = -1;
 
   userData = [];
-  userDataIndex = [];
+  userDataIndex = null;
 
   taskName = null;
 
@@ -60,7 +60,7 @@ export class SnippetPage {
         }
       } else {
         if (this.userDataIndex != undefined) {
-          data['snippets'].push({"name": this.name, 
+          data['snippets'].push({"name": this.name,
                                 "snippet": this.snippet,
                                  "userDataIndex": this.userDataIndex})
 
