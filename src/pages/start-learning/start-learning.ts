@@ -4,6 +4,7 @@ import { SnippetPage } from '../snippet/snippet'
 import { SkillsServiceProvider } from '../../providers/skills-service/skills-service'
 import { ViewChild } from '@angular/core';
 import { Slides } from 'ionic-angular';
+import { HomePage } from '../home/home'
 import * as criticalPath from 'critical-path';
 
 import 'rxjs/add/operator/map';
@@ -127,9 +128,13 @@ export class StartLearningPage {
       userData.push(data)
     }
 
-    localStorage.setItem('userData', JSON.stringify(userData))    
+    localStorage.setItem('userData', JSON.stringify(userData))
+    this.goToSlide(3);
   }
 
+  goHome() {
+    this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});    
+  }
   /**
   * Using current information given from past slides, sets
   * values needed to display tasks and task durations

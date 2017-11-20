@@ -17,7 +17,8 @@
             <ion-row *ngFor="let task of data.tasks; let j=index">
                 <ion-item no-lines style="background: transparent; color: white; font-weight: lighter;"> 
                 	<p style="color: white;"> Task: {{task.task.name}} </p>
-                	<p style="color: white;">Completed: {{task.completed}} </p>
+                	<p style="color: white;"> Completed: {{task.completed}} </p>
+                	<p style="color: white;"> Estimated Time to Completion: {{ task.task.cost }} Hours </p>
 
                     <button *ngIf="!task.completed" ion-button icon-start on-click="createSnippet(i, j)">
                         <ion-icon name="add"></ion-icon>

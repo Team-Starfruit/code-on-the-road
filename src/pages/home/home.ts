@@ -20,6 +20,7 @@ export class HomePage {
 
   	if (data != null) {
   		this.userData = data;
+      console.log(this.userData)
   	}
   }
 

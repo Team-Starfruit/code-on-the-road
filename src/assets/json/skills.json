@@ -1,254 +1,254 @@
 {
-	"skills": [ 
-		{
-			"skill": "Algorithms",
-			"tasks": [
-				{
-					"task": 1,
-					"description": "Create a snippet that completes task 1"
-				},
-				{
-					"task": 2,
-					"description": "Create a snippet that completes task 2"
-				},				
-				{
-					"task": 3,
-					"description": "Create a snippet that completes task 3"
-				},
-				{
-					"task": 4,
-					"description": "Create a snippet that completes task 4"
-				},
-				{
-					"task": 5,
-					"description": "Create a snippet that completes task 5"
-				},
-				{
-					"task": 6,
-					"description": "Create a snippet that completes task 6"
-				},
-				{
-					"task": 7,
-					"description": "Create a snippet that completes task 7"
-				},
-				{
-					"task": 8,
-					"description": "Create a snippet that completes task 8"
-				},
-				{
-					"task": 9,
-					"description": "Create a snippet that completes task 9"
-				},
-				{
-					"task": 10,
-					"description": "Create a snippet that completes task 10"
-				},
-				{
-					"task": 11,
-					"description": "Create a snippet that completes task 11"
-				},
-				{
-					"task": 12,
-					"description": "Create a snippet that completes task 12"
-				},
-				{
-					"task": 13,
-					"description": "Create a snippet that completes task 13"
-				},
-				{
-					"task": 14,
-					"description": "Create a snippet that completes task 14"
-				},
-				{
-					"task": 15,
-					"description": "Create a snippet that completes task 15"
-				},
-				{
-					"task": 16,
-					"description": "Create a snippet that completes task 16"
-				},
-				{
-					"task": 17,
-					"description": "Create a snippet that completes task 17"
-				},
-				{
-					"task": 18,
-					"description": "Create a snippet that completes task 18"
-				},
-				{
-					"task": 19,
-					"description": "Create a snippet that completes task 19"
-				},
-				{
-					"task": 20,
-					"description": "Create a snippet that completes task 20"
-				},
-				{
-					"task": 21,
-					"description": "Create a snippet that completes task 21"
-				},
-				{
-					"task": 22,
-					"description": "Create a snippet that completes task 22"
-				},
-				{
-					"task": 23,
-					"description": "Create a snippet that completes task 23"
-				},
-				{
-					"task": 24,
-					"description": "Create a snippet that completes task 24"
-				},
-				{
-					"task": 25,
-					"description": "Create a snippet that completes task 25"
-				},
-				{
-					"task": 26,
-					"description": "Create a snippet that completes task 26"
-				},
-				{
-					"task": 27,
-					"description": "Create a snippet that completes task 27"
-				},
-				{
-					"task": 28,
-					"description": "Create a snippet that completes task 28"
-				},
-				{
-					"task": 29,
-					"description": "Create a snippet that completes task 29"
-				},
-				{
-					"task": 30,
-					"description": "Create a snippet that completes task 30"
-				}
-			]
-		},
-		{
-			"skill": "Data structures",
-			"tasks": [
-				{
-					"task": 1,
-					"description": "Create a snippet that completes task 1"
-				},
-				{
-					"task": 2,
-					"description": "Create a snippet that completes task 2"
-				},				
-				{
-					"task": 3,
-					"description": "Create a snippet that completes task 3"
-				},
-				{
-					"task": 4,
-					"description": "Create a snippet that completes task 4"
-				},
-				{
-					"task": 5,
-					"description": "Create a snippet that completes task 5"
-				},
-				{
-					"task": 6,
-					"description": "Create a snippet that completes task 6"
-				},
-				{
-					"task": 7,
-					"description": "Create a snippet that completes task 7"
-				},
-				{
-					"task": 8,
-					"description": "Create a snippet that completes task 8"
-				},
-				{
-					"task": 9,
-					"description": "Create a snippet that completes task 9"
-				},
-				{
-					"task": 10,
-					"description": "Create a snippet that completes task 10"
-				},
-				{
-					"task": 11,
-					"description": "Create a snippet that completes task 11"
-				},
-				{
-					"task": 12,
-					"description": "Create a snippet that completes task 12"
-				},
-				{
-					"task": 13,
-					"description": "Create a snippet that completes task 13"
-				},
-				{
-					"task": 14,
-					"description": "Create a snippet that completes task 14"
-				},
-				{
-					"task": 15,
-					"description": "Create a snippet that completes task 15"
-				},
-				{
-					"task": 16,
-					"description": "Create a snippet that completes task 16"
-				},
-				{
-					"task": 17,
-					"description": "Create a snippet that completes task 17"
-				},
-				{
-					"task": 18,
-					"description": "Create a snippet that completes task 18"
-				},
-				{
-					"task": 19,
-					"description": "Create a snippet that completes task 19"
-				},
-				{
-					"task": 20,
-					"description": "Create a snippet that completes task 20"
-				},
-				{
-					"task": 21,
-					"description": "Create a snippet that completes task 21"
-				},
-				{
-					"task": 22,
-					"description": "Create a snippet that completes task 22"
-				},
-				{
-					"task": 23,
-					"description": "Create a snippet that completes task 23"
-				},
-				{
-					"task": 24,
-					"description": "Create a snippet that completes task 24"
-				},
-				{
-					"task": 25,
-					"description": "Create a snippet that completes task 25"
-				},
-				{
-					"task": 26,
-					"description": "Create a snippet that completes task 26"
-				},
-				{
-					"task": 27,
-					"description": "Create a snippet that completes task 27"
-				},
-				{
-					"task": 28,
-					"description": "Create a snippet that completes task 28"
-				},
-				{
-					"task": 29,
-					"description": "Create a snippet that completes task 29"
-				},
-				{
-					"task": 30,
-					"description": "Create a snippet that completes task 30"
-				}
-			]
-		}
-	]
+  "skills": [
+    {
+      "skill": "Algorithms",
+      "tasks": [
+        {
+          "task": 1,
+          "description": "Create a snippet that creates multiple for loops"
+        },
+        {
+          "task": 2,
+          "description": "Create a snippet that uses that creates nested for loops"
+        },
+        {
+          "task": 3,
+          "description": "Create a snippet that creates a Fibonacci algorithm"
+        },
+        {
+          "task": 4,
+          "description": "Create a snippet that creates an insertion sort algorithm"
+        },
+        {
+          "task": 5,
+          "description": "Create a snippet that creates a selection sort algorithm"
+        },
+        {
+          "task": 6,
+          "description": "Create a snippet that creates a bubble sort algorithm"
+        },
+        {
+          "task": 7,
+          "description": "Create a snippet that implements a brute force algorithm"
+        },
+        {
+          "task": 8,
+          "description": "Create a snippet that creates a divide and conquer algorithm"
+        },
+        {
+          "task": 9,
+          "description": "Create a snippet that creates multiple arrays"
+        },
+        {
+          "task": 10,
+          "description": "Create a snippet that uses divide and conquer algorithm to create a quicksort algorithm"
+        },
+        {
+          "task": 11,
+          "description": "Create a snippet that creates a heapsort algorithm"
+        },
+        {
+          "task": 12,
+          "description": "Create a snippet that creates a merge sort algorithm."
+        },
+        {
+          "task": 13,
+          "description": "Create a snippet that uses multiple arrays to create an order statistics program"
+        },
+        {
+          "task": 14,
+          "description": "Create a snippet that uses vertex and edges for a graph"
+        },
+        {
+          "task": 15,
+          "description": "Create a snippet that creates a Breadth First Search algorithm"
+        },
+        {
+          "task": 16,
+          "description": "Create a snippet that creates a Depth First Search algorithm"
+        },
+        {
+          "task": 17,
+          "description": "Create a snippet that uses 2D arrays for a graph"
+        },
+        {
+          "task": 18,
+          "description": "Create a snippet that creates a Dijkstra algorithm"
+        },
+        {
+          "task": 19,
+          "description": "Create a snippet that creates a Floyd Warshall Algorithm"
+        },
+        {
+          "task": 20,
+          "description": "Create a snippet that creates a Prim's Minimum Spanning Tree Algorithm"
+        },
+        {
+          "task": 21,
+          "description": "Create a snippet that creates a Kruskal's Minimum Spanning Tree Algorithm"
+        },
+        {
+          "task": 22,
+          "description": "Create a snippet that creates a topological sorting algorithm"
+        },
+        {
+          "task": 23,
+          "description": "Create a snippet that creates a Johnson's algorithm for a graph"
+        },
+        {
+          "task": 24,
+          "description": "Create a snippet that creates an algorithm that can cut vertex from a graph"
+        },
+        {
+          "task": 25,
+          "description": "Create a snippet that uses that same cut vertex and add it to a different part of the graph"
+        },
+        {
+          "task": 26,
+          "description": "Create a snippet that creates an algorithm that finds the longest common subsequence in a word"
+        },
+        {
+          "task": 27,
+          "description": "Create a snippet that creates an algorithm that finds the longest increasing subsequence in an array of numbers"
+        },
+        {
+          "task": 28,
+          "description": "Create a snippet that uses dynammic programming"
+        },
+        {
+          "task": 29,
+          "description": "Create a snippet that solves the knapsack problem using dynammic programming"
+        },
+        {
+          "task": 30,
+          "description": "Create a snippet that uses Bogosort"
+        }
+      ]
+    },
+    {
+      "skill": "Data structures",
+      "tasks": [
+        {
+          "task": 1,
+          "description": "Create a snippet that creates an array"
+        },
+        {
+          "task": 2,
+          "description": "Create a snippet that creates creates a stack"
+        },
+        {
+          "task": 3,
+          "description": "Create a snippet that merges two stacks together"
+        },
+        {
+          "task": 4,
+          "description": "Create a snippet that creates a linked list"
+        },
+        {
+          "task": 5,
+          "description": "Create a snippet that creates a doubly linked list"
+        },
+        {
+          "task": 6,
+          "description": "Create a snippet that adds a node to the list"
+        },
+        {
+          "task": 7,
+          "description": "Create a snippet that removes a node from the list"
+        },
+        {
+          "task": 8,
+          "description": "Create a snippet that creates a heap"
+        },
+        {
+          "task": 9,
+          "description": "Create a snippet that increases and decreases a heap"
+        },
+        {
+          "task": 10,
+          "description": "Create a snippet that creates a queue"
+        },
+        {
+          "task": 11,
+          "description": "Create a snippet that creates Deque functions"
+        },
+        {
+          "task": 12,
+          "description": "Create a snippet that creates a priority queue"
+        },
+        {
+          "task": 13,
+          "description": "Create a snippet that copies an array"
+        },
+        {
+          "task": 14,
+          "description": "Create a snippet that flips or reverses an array"
+        },
+        {
+          "task": 15,
+          "description": "Create a snippet that flips or reveerses a linked list"
+        },
+        {
+          "task": 16,
+          "description": "Create a snippet that creates a binary tree"
+        },
+        {
+          "task": 17,
+          "description": "Create a snippet that creates a Binary search tree"
+        },
+        {
+          "task": 18,
+          "description": "Create a snippet that traverses through the tree using preorder traversal"
+        },
+        {
+          "task": 19,
+          "description": "Create a snippet that traverses through the tree using postorder traversal"
+        },
+        {
+          "task": 20,
+          "description": "Create a snippet that creates a graph"
+        },
+        {
+          "task": 21,
+          "description": "Create a snippet that searches through the graph using Breadth First Search"
+        },
+        {
+          "task": 22,
+          "description": "Create a snippet that searches through the graph using Depth First Search"
+        },
+        {
+          "task": 23,
+          "description": "Create a snippet that creates a 2D array"
+        },
+        {
+          "task": 24,
+          "description": "Create a snippet that adds and removes from a 2D array"
+        },
+        {
+          "task": 25,
+          "description": "Create a snippet that creates a matrix"
+        },
+        {
+          "task": 26,
+          "description": "Create a snippet that searches through a matrix"
+        },
+        {
+          "task": 27,
+          "description": "Create a snippet that sorts through a linked list"
+        },
+        {
+          "task": 28,
+          "description": "Create a snippet that prints a binary tree in vertical order using hashing methods"
+        },
+        {
+          "task": 29,
+          "description": "Create a snippet that sorts a linked list using an insertion sort"
+        },
+        {
+          "task": 30,
+          "description": "Create a snippet that sorts a doubly linked list using bubble sort"
+        }
+      ]
+    }
+  ]
 }
